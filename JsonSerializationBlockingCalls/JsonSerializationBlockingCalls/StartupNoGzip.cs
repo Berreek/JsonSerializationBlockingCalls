@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Ben.Diagnostics;
+﻿using Ben.Diagnostics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace JsonSerializationBlockingCalls
 {
-    public class Startup
+    public class StartupNoGzip
     {
-        public Startup(IConfiguration configuration)
+        public StartupNoGzip(IConfiguration configuration)
         {
             Configuration = configuration;
         }

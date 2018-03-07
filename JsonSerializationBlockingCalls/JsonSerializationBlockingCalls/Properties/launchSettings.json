@@ -8,17 +8,24 @@
     }
   },
   "profiles": {
-    "JsonSerializationBlockingCalls": {
+    "NoGzip": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "NoGzip"
+      },
+      "applicationUrl": "http://localhost:5050/"
+    },
+    "Gzip": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Gzip"
       },
       "applicationUrl": "http://localhost:5050/"
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "NoGzip"
       }
     }
   }
